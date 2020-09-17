@@ -5,8 +5,7 @@ from bs4 import BeautifulSoup #크롤링을 위한 BeautifulSoup, selenium 모�
 import re
 
 
-class Football: #네이버 스포츠에서 크롤링을 해올 클래스 시작 
-    #epl, laliga 등 여러 리그에서 데이터를 가져와야 하므로 클래스로 하였습니다
+class Football: 
     def __init__(self, address):
         self.address = address #주소 : url을 객체로 설정
 
@@ -74,11 +73,6 @@ class Football: #네이버 스포츠에서 크롤링을 해올 클래스 시작
                         pass
                     
                 file.write("\n")
-
-            
-
-
-
-
+                
 name = Football('https://www.kangwon.ac.kr/www/selecttnCafMenuListWU.do?key=223&sc1=SC20&sc2=SC')
 name.search()
